@@ -1,0 +1,5 @@
+When the type D is an interface also
+
+interface D will extend interface A,B and C
+When the situation arises that the extended interfaces have conflicting default methods then interface D
+must either provide its own default implementation or declare the method as abstract

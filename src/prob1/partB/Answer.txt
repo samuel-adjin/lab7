@@ -1,0 +1,1 @@
+The equals method for the employee wasn't properly overwritten

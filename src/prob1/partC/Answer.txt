@@ -1,0 +1,1 @@
+For hashMap it is important to override both equals and hashcode. The Employee class only override the equals and not the hashcode.

@@ -1,0 +1,6 @@
+When the type D is a class and A, B, C are interfaces
+
+class D will implement interface A,B,C. There is a possibility where the interfaces each have a default method with
+the same signature
+ 1. In such a situation Java requires the class to explicitly override the conflicting method or declare it as abstract method as Java is unable to know which default method to use.
+
