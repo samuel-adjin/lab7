@@ -1,0 +1,1 @@
+  The tracker.get(e).setVisited(true) modifies Employee object involved in the equals and hashcode. This causes this an inconsistency between the equals and the hashcode.

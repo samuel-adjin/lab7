@@ -16,17 +16,11 @@ public class EmployeeInfo {
         List<Employee> noDupsList = new ArrayList<>();
         for(int i = 0; i < employees.size(); ++i) {
             Employee e = employees.get(i);
-//            System.out.println("Before condition");
-//            System.out.println(e);
             if(!tracker.containsKey(e)) {
-                System.out.println("Meet condition" + e);
-                System.out.println("Done Meet Condition");
                 tracker.put(e, e);
                 noDupsList.add(e);
             } else {
-//                System.out.println("does not meet condition" + tracker.get(e));
                 tracker.get(e).setVisited(true);
-//                System.out.println("Done not meet condition");
             }
         }
         return noDupsList;
@@ -42,25 +36,25 @@ public class EmployeeInfo {
         List<Employee> list = new ArrayList<Employee>() {
             {
                 add(new Employee("Richard", 55000));
-//                add(new Employee("Richard", 55000));
-//                add(new Employee("John", 30000));
-//                add(new Employee("Steve", 30000));
-//                add(new Employee("Zeke", 50000));
-//                add(new Employee("Reggie", 50000));
-//                add(new Employee("Steve", 30000));
-//                add(new Employee("John", 70000));
-//                add(new Employee("Harold", 55000));
+                add(new Employee("Richard", 55000));
+                add(new Employee("John", 30000));
+                add(new Employee("Steve", 30000));
+                add(new Employee("Zeke", 50000));
+                add(new Employee("Reggie", 50000));
+                add(new Employee("Steve", 30000));
+                add(new Employee("John", 70000));
+                add(new Employee("Harold", 55000));
                 add(new Employee("Richard", 55000));
                 add(new Employee("Richard", 55000));
-                add(new Employee("Richard", 60000));
-//                add(new Employee("Dennis", 80000));
-//                add(new Employee("Adam", 80000));
-//                add(new Employee("John", 70000));
-//                add(new Employee("Charles", 25000));
-//                add(new Employee("Bill", 60000));
-//                add(new Employee("Bob", 60000));
-//                add(new Employee("Bill", 70000));
-//                add(new Employee("Bob", 60000));
+               add(new Employee("Richard", 60000));
+               add(new Employee("Dennis", 80000));
+                add(new Employee("Adam", 80000));
+                add(new Employee("John", 70000));
+                add(new Employee("Charles", 25000));
+                add(new Employee("Bill", 60000));
+                add(new Employee("Bob", 60000));
+add(new Employee("Bill", 70000));
+                add(new Employee("Bob", 60000));
             }
         };
 
@@ -87,9 +81,7 @@ public class EmployeeInfo {
 //		list.add(new Employee("Bill", 60000));
 //		list.add(new Employee("Bill", 60000));
         List<Employee> answer = removeDuplicates(list);
-//        System.out.println(answer);
 
-//		System.out.println(answer);
         System.out.println("Is answer correct? " + listsAreEqual(answer, dupsRemoved));
     }
 
